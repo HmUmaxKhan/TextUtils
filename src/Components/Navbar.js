@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 function Navbar(props) {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className={`navbar navbar-expand-lg navbar-${props.bg} bg-${props.bg}`}>
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
           {props.title}
@@ -37,7 +37,10 @@ function Navbar(props) {
                 </a>
               </li>
             </ul>
-
+            <div class={`form-check form-switch text-${props.bg==='light' ? 'dark' : 'light'}`} >
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={props.mode}/>
+            <label class={`form-check-label `}  htmlFor="flexSwitchCheckDefault">Enable Dark Mode</label>
+            </div>
           </div>
         </div>
       </nav>
