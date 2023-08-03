@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import Navbar from './Components/Navbar';
-import Textform from './Components/Textform';
+// import Textform from './Components/Textform';
+import About from './Components/About';
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
     
     <div>
        <Navbar title = "TextUtils" about = "About" mode = {togglebg} bg={mode}/>
-       <Textform bg={mode}/>
+      <About />
     </div>
   
   );
