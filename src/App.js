@@ -24,7 +24,7 @@ function App() {
     
     <div>
        <Navbar title = "TextUtils" about = "About" mode = {togglebg} bg={mode}/>
-      <About />
+      <About bg={mode}/>
     </div>
   
   );
