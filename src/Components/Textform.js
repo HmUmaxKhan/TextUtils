@@ -47,14 +47,14 @@ const handleClick4 =() => {
     setText(event.target.value);
   }
   return (
-    <div>
+    <div className="my-5">
      <div className={`container text-${props.bg==='light' ? 'dark' : 'light'}`}>
       <h3 className="my-4">
         <b>Text Area</b>
       </h3>
       </div>
       <div className="form-floating">
-      <div className={`container my-4`}>
+      <div className={`container my-2`}>
         <textarea
           className={`form-control  text-${props.bg==='light' ? 'dark' : 'light'}`}
           placeholder="Enter the text here..."
